@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,700;1,900&family=Libre+Baskerville:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightpink;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    height: 390px;
+    width: 250px;
+}
+
+.display {
+    background-color: #ffe169;
+    color: black;
+    font-size: 36px;
+    position: relative;
+    padding: 20px 10px;
+    text-align: right;
+    height: 70px;
+    width: 100%;
+}
+
+.nums-container {
+    width: 75%;
+}
+
+.ops-container {
+    width: 25%;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.big-v {
+    border-radius: 50px;
+    height: 110px;
+}
+
+button.big-h {
+    border-radius: 50px;
+    width: 110px;
+}
+
+button.orange {
+    background-color: #EE9406;
+    color: white;
+}
+
+button.dark-grey {
+    background-color: #323232;
+    color: #00FECA;
+}
+
+button.light-grey {
+    background-color: #A5A5A5;
+}
+
+button.ac {
+    margin-right: 50%;
+}
